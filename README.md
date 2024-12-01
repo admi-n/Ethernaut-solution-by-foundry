@@ -33,7 +33,7 @@ forge init Ethernaut-solution-by-foundry
 https://github.com/OpenZeppelin/ethernaut/tree/master/contracts/lib
 在lib中clone 然后根据库分支来切换分支
 
-![image-20241201164816224](README/image-20241201164816224.png)
+![image-20241201164816224](img/image-20241201164816224.png)
 
 例如：openzeppelin-contracts-06
 
