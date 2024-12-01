@@ -28,8 +28,8 @@ contract Exploit {
 }
 
 contract Exp is Script {
-    address public constant StakeInstance = 0x579a8047AC30771988bBFBDED2fAf7e290ADA085;
-    address public constant WethInstance = 0x42A09C3fbfb22774936B5D5d085e2FA7963b0db8; 
+    address public constant StakeInstance = /*获取的实例地址*/;
+    address public constant WethInstance = 0x42A09C3fbfb22774936B5D5d085e2FA7963b0db8;   //根据不同的网络调整,这个为holesky的WETH地址
     address hacker = vm.rememberKey(vm.envUint("PRIVATE_KEY"));
 
     function run() public {

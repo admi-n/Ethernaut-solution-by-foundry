@@ -20,7 +20,7 @@ contract Exploit {
 
 contract Exp is Script {
 
-    King public KingInstance = King(payable(0x1da110BB5f03f3aC7Acd253C73B4b3885e70eAbe));
+    King public KingInstance = King(payable(/*获取的实例地址*/));
     address hacker = vm.rememberKey(vm.envUint("PRIVATE_KEY"));
     address owner = vm.envAddress("MY_ADDRESS");
     //Exploit public exploit;

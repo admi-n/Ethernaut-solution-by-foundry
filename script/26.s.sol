@@ -28,7 +28,7 @@ contract DetectionBot is IDetectionBot {
 }
 
 contract Exp is Script {
-    DoubleEntryPoint public DoubleEntryPointInstance = DoubleEntryPoint(payable(0xe22C6530db412bf2fA6dB78B18ffB9A569684AEa));
+    DoubleEntryPoint public DoubleEntryPointInstance = DoubleEntryPoint(payable(/*获取的实例地址*/));
     address hacker = vm.rememberKey(vm.envUint("PRIVATE_KEY"));
     address owner = vm.envAddress("MY_ADDRESS");
 

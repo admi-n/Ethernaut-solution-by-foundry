@@ -13,7 +13,7 @@ contract Exploit {
 
 contract Exp is Script {
 
-    Denial public DenialInstance = Denial(payable(0xecd9D866218810a8f14E0541AD91e45187E74703));
+    Denial public DenialInstance = Denial(payable(/*获取的实例地址*/));
     address hacker = vm.rememberKey(vm.envUint("PRIVATE_KEY"));
     address owner = vm.envAddress("MY_ADDRESS"); 
     Exploit public attackContract;

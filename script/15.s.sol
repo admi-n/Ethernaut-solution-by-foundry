@@ -32,7 +32,7 @@ contract Exploit is Script {
 
 contract Exp is Script {
 
-    NaughtCoin public NaughtCoinInstance = NaughtCoin(payable(0x8eF3A5Ac889C9B07C604Eb54b1d7E54c3780ccf2));
+    NaughtCoin public NaughtCoinInstance = NaughtCoin(payable(/*获取的实例地址*/));
     address hacker = vm.rememberKey(vm.envUint("PRIVATE_KEY"));
     address owner = vm.envAddress("MY_ADDRESS");
     //Exploit public exploit;

@@ -86,7 +86,7 @@ remappings = [
 ```
 #供参考的env文件
 rpc='YourRpc'
-# 一些可供使用的参考rpc节点
+# 一些可供使用的参考rpc节点  推荐使用holesky
 # https://www.infura.io/
 # https://www.ankr.com/
 # https://blockpi.io/

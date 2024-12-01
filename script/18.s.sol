@@ -8,7 +8,7 @@ import "src/18-MagicNumber.sol";
 
 contract Exp is Script {
 
-    MagicNum public MagicNumInstance = MagicNum(payable(0x882f24aedB98B4E4F42470c819b0e068d9Ea0485));
+    MagicNum public MagicNumInstance = MagicNum(payable(/*获取的实例地址*/));
     address hacker = vm.rememberKey(vm.envUint("PRIVATE_KEY"));
     address owner = vm.envAddress("MY_ADDRESS"); 
 

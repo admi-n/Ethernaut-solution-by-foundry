@@ -10,7 +10,7 @@ contract Exploit {
 }
 
 contract Exp is Script {
-    MagicAnimalCarousel public MagicAnimalCarouselInstance = MagicAnimalCarousel(payable(0x075665f610C53f84bA6f568525592944F6dA639E));  //address为生成实例的合约实例地址
+    MagicAnimalCarousel public MagicAnimalCarouselInstance = MagicAnimalCarousel(payable(/*获取的实例地址*/));  //address为生成实例的合约实例地址
     address hacker = vm.rememberKey(vm.envUint("PRIVATE_KEY"));
     address owner = vm.envAddress("MY_ADDRESS");
 

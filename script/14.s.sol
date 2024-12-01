@@ -27,7 +27,7 @@ contract Exploit is Script {
 
 contract Exp is Script {
 
-    GatekeeperTwo public GatekeeperTwoInstance = GatekeeperTwo(payable(0x14Ef28E14C38ec98DbAe6D107D809fDf739aC5E0));
+    GatekeeperTwo public GatekeeperTwoInstance = GatekeeperTwo(payable(/*获取的实例地址*/));
     address hacker = vm.rememberKey(vm.envUint("PRIVATE_KEY"));
     address owner = vm.envAddress("MY_ADDRESS");
     //Exploit public exploit;

@@ -9,7 +9,7 @@ import "src/01-Fallback.sol";
 contract Exp is Script {
 
 
-    Fallback public fallbackInstance = Fallback(payable(0xB9238846DD86B01E3c5fFc61ae1938567830D23a));
+    Fallback public fallbackInstance = Fallback(payable(/*获取的实例地址*/));
     address hacker = vm.rememberKey(vm.envUint("PRIVATE_KEY"));
 
 

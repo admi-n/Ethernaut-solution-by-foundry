@@ -95,7 +95,7 @@ contract Player {
 
 contract CoinFlipSolution is Script {
 
-    CoinFlip public coinflipInstance = CoinFlip(0xA6d84D7a94790d38527FCA92c41d69b4C5D0FeA0);
+    CoinFlip public coinflipInstance = CoinFlip(/*获取的实例地址*/);
 
     function run() external {
         vm.startBroadcast(vm.envUint("PRIVATE_KEY"));

@@ -8,7 +8,7 @@ import "src/05-Token.sol";
 
 contract Exp is Script {
 
-    Token public TokenInstance = Token(payable(0x32F0276B7C6eACCC25e967B764594E3b877e0296));
+    Token public TokenInstance = Token(payable(/*获取的实例地址*/));
     address hacker = vm.rememberKey(vm.envUint("PRIVATE_KEY"));
     address owner = vm.envAddress("MY_ADDRESS");
 

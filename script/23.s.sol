@@ -19,7 +19,7 @@ contract AttackerToken is ERC20 {
 
 contract Exp is Script {
 
-    DexTwo public DexTwoInstance = DexTwo(payable(0xA1cf4B4742FDB23c59C4F7619e29541A7392fCef));
+    DexTwo public DexTwoInstance = DexTwo(payable(/*获取的实例地址*/));
     address hacker = vm.rememberKey(vm.envUint("PRIVATE_KEY"));
     address owner = vm.envAddress("MY_ADDRESS"); 
     // Exploit public attackContract;

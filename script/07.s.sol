@@ -14,7 +14,7 @@ contract Exploit {
 
 contract Exp is Script {
 
-    Force public ForceInstance = Force(payable(0x1B9c9b723117fe7a5b7c7C8AF7251F2660904ccD));
+    Force public ForceInstance = Force(payable(/*获取的实例地址*/));
     address hacker = vm.rememberKey(vm.envUint("PRIVATE_KEY"));
     address owner = vm.envAddress("MY_ADDRESS");
     Exploit exploit;

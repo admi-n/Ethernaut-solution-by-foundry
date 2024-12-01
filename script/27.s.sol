@@ -27,7 +27,7 @@ contract Exploit {
     }
 }
 contract Exp is Script {
-    GoodSamaritan public GoodSamaritanInstance = GoodSamaritan(payable(0x9dce21C252561dF2452F2f703fe604e525c5929F));
+    GoodSamaritan public GoodSamaritanInstance = GoodSamaritan(payable(/*获取的实例地址*/));
     address hacker = vm.rememberKey(vm.envUint("PRIVATE_KEY"));
     address owner = vm.envAddress("MY_ADDRESS");
 

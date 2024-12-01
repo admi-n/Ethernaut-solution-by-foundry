@@ -22,7 +22,7 @@ contract Exploit is Buyer {
 }
 contract Exp is Script {
 
-    Shop public ShopInstance = Shop(payable(0xA030423bd58384B4D0D64Acc593D87A897EfA2B9));
+    Shop public ShopInstance = Shop(payable(/*获取的实例地址*/));
     address hacker = vm.rememberKey(vm.envUint("PRIVATE_KEY"));
     address owner = vm.envAddress("MY_ADDRESS"); 
     Exploit public attackContract;

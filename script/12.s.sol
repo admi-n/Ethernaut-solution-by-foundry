@@ -16,7 +16,7 @@ contract Exploit {
 
 contract Exp is Script {
 
-    Privacy public PrivacyInstance = Privacy(payable(0x9a939a7a39BE6b967FAd3DB690bCC8a13B59A9D0));
+    Privacy public PrivacyInstance = Privacy(payable(/*获取的实例地址*/));
     address hacker = vm.rememberKey(vm.envUint("PRIVATE_KEY"));
     address owner = vm.envAddress("MY_ADDRESS");
     //Exploit public exploit;

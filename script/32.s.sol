@@ -11,7 +11,7 @@ import "src/32-Impersonator.sol";
 // }
 
 contract Exp is Script {
-    Impersonator public ImpersonatorInstance = Impersonator(address(0x2c5641401b82D7FD27f24e1ccadE20291481A398));
+    Impersonator public ImpersonatorInstance = Impersonator(address(/*获取的实例地址*/));
 
 
     address hacker = vm.rememberKey(vm.envUint("PRIVATE_KEY"));

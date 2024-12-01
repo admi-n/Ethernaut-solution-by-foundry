@@ -9,7 +9,7 @@ import "src/08-Vault.sol";
 
 contract Exp is Script {
 
-    Vault public VaultInstance = Vault(payable(0x4ab4Ecd5156A68a79611b07610C229d1dEd59614));
+    Vault public VaultInstance = Vault(payable(/*获取的实例地址*/));
     address hacker = vm.rememberKey(vm.envUint("PRIVATE_KEY"));
     address owner = vm.envAddress("MY_ADDRESS");
 

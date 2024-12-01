@@ -19,7 +19,7 @@ import "src/22-Dex.sol";
 // 您如何批准ERC20 的交易？
 contract Exp is Script {
 
-    Dex public DexInstance = Dex(payable(0xeCeA6C2B70C1491CDd5CE0b083501E57FEB40BdA));
+    Dex public DexInstance = Dex(payable(/*获取的实例地址*/));
     address hacker = vm.rememberKey(vm.envUint("PRIVATE_KEY"));
     address owner = vm.envAddress("MY_ADDRESS"); 
     // Exploit public attackContract;

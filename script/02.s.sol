@@ -8,7 +8,7 @@ import "src/02-Fallout.sol";
 
 contract Exp is Script {
 
-    Fallout public FalloutInstance = Fallout(payable(0x4AfCC463479e2315a7cC3CB97173b0Ff145A6467));
+    Fallout public FalloutInstance = Fallout(payable(/*获取的实例地址*/));
     address hacker = vm.rememberKey(vm.envUint("PRIVATE_KEY"));
 
 

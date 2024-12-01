@@ -35,7 +35,7 @@ contract Exploit {
 }
 
 contract Exp is Script {
-    GatekeeperThree public GatekeeperThreeInstance = GatekeeperThree(payable(0xC7d43DA105BB8DC4E2Dc15324Dcf46B50Da52b16));
+    GatekeeperThree public GatekeeperThreeInstance = GatekeeperThree(payable(/*获取的实例地址*/));
     address hacker = vm.rememberKey(vm.envUint("PRIVATE_KEY"));
     address owner = vm.envAddress("MY_ADDRESS");
 

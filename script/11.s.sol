@@ -29,7 +29,7 @@ contract Exploit {
 
 contract Exp is Script {
 
-    Elevator public ElevatorInstance = Elevator(payable(0xc3060EaD5C14b73c817D12706592e6F2844150a7));
+    Elevator public ElevatorInstance = Elevator(payable(/*获取的实例地址*/));
     address hacker = vm.rememberKey(vm.envUint("PRIVATE_KEY"));
     address owner = vm.envAddress("MY_ADDRESS");
     Exploit public exploit;

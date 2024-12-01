@@ -9,9 +9,9 @@ import "src/24-PuzzleWallet.sol";
 
 contract Exp is Script {
 
-    //PuzzleWallet public PuzzleWalletInstance = PuzzleWallet(payable(0x8d7cba948856AE300115f32Af77e68a3904448A1));
-    PuzzleWallet PuzzleWalletInstance = PuzzleWallet(payable(0x59540bdF9d069c6054225ee87f5953e6461ef813));
-    PuzzleProxy PuzzleProxyInstance = PuzzleProxy(payable(0x59540bdF9d069c6054225ee87f5953e6461ef813));   
+    //PuzzleWallet public PuzzleWalletInstance = PuzzleWallet(payable(/*获取的实例地址*/));
+    PuzzleWallet PuzzleWalletInstance = PuzzleWallet(payable(/*获取的实例地址*/));
+    PuzzleProxy PuzzleProxyInstance = PuzzleProxy(payable(/*获取的实例地址*/));   
     address hacker = vm.rememberKey(vm.envUint("PRIVATE_KEY"));
     address owner = vm.envAddress("MY_ADDRESS"); 
 

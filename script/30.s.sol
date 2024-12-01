@@ -7,7 +7,7 @@ import "src/30-HigherOrder.sol";
 
 
 contract Exp is Script {
-    HigherOrder public higherOrderInstance = HigherOrder(payable(0xf43a5eE4D74c82359f866796Ba2d31c8411fCdd2));
+    HigherOrder public higherOrderInstance = HigherOrder(payable(/*获取的实例地址*/));
     address hacker = vm.rememberKey(vm.envUint("PRIVATE_KEY"));
     address owner = vm.envAddress("MY_ADDRESS");
 

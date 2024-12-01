@@ -28,7 +28,7 @@ contract Attack {
 }
 
 contract Exp is Script {
-    Switch public SwitchInstance = Switch(payable(0xEE127a14E7eF6A1E615988C81CADEcf084488b94)); // 请替换为实际的目标地址
+    Switch public SwitchInstance = Switch(payable(/*获取的实例地址*/));
     address hacker = vm.rememberKey(vm.envUint("PRIVATE_KEY"));
     address owner = vm.envAddress("MY_ADDRESS");
 

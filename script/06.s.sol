@@ -8,7 +8,7 @@ import "src/06-Delegation.sol";
 
 contract Exp is Script {
 
-    Delegation public DelegationInstance = Delegation(payable(0xda27d804D0652034A6b05a91982556399960694d));
+    Delegation public DelegationInstance = Delegation(payable(/*获取的实例地址*/));
     address hacker = vm.rememberKey(vm.envUint("PRIVATE_KEY"));
     address owner = vm.envAddress("MY_ADDRESS");
 

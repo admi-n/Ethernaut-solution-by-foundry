@@ -8,7 +8,7 @@ import "src/17-Recovery.sol";
 
 contract Exp is Script {
 
-    Recovery public RecoveryInstance = Recovery(payable(0x636d53BE5c855aE034bcBECB9024879a3271254e));
+    Recovery public RecoveryInstance = Recovery(payable(/*获取的实例地址*/));
     address hacker = vm.rememberKey(vm.envUint("PRIVATE_KEY"));
     address owner = vm.envAddress("MY_ADDRESS"); 
 

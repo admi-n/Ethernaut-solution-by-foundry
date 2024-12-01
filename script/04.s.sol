@@ -16,7 +16,7 @@ contract Exploit {
 
 contract Exp is Script {
 
-    Telephone public TelephoneInstance = Telephone(payable(0x343514DcF91278170b4A96F6de8CCB964D892D9a));
+    Telephone public TelephoneInstance = Telephone(payable(/*获取的实例地址*/));
     address hacker = vm.rememberKey(vm.envUint("PRIVATE_KEY"));
     Exploit public exploit;
 
