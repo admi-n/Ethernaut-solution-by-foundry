@@ -40,9 +40,10 @@ https://github.com/OpenZeppelin/ethernaut/tree/master/contracts/lib
 ```
 cd lib 
 git clone https://github.com/openzeppelin/openzeppelin-contracts
-cp openzeppelin-contracts openzeppelin-contracts-06
+cp -r openzeppelin-contracts openzeppelin-contracts-06
 cd openzeppelin-contracts-06
 git checkout 8e02960
+// 08同理
 ```
 
 
@@ -92,6 +93,7 @@ rpc='YourRpc'
 # https://www.infura.io/
 # https://www.ankr.com/
 # https://blockpi.io/
+# https://allthatnode.com
 # .....
 
 
